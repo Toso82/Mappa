@@ -1,0 +1,16 @@
+<mat-card>
+    <mat-card-content (mouseleave)="visibile=false">
+        <div *ngIf="!visibile" (mouseenter)="visibile=true">
+            <fa-icon [icon]="['fas','layer-group']" size="lg"></fa-icon>
+        </div>
+
+        <div>
+            <mat-radio-group fxLayout="column" fxLayoutGap="5px" [(ngModel)]="layerSelect"
+                (change)="layerChange($event)" *ngIf="visibile">
+                <mat-radio-button *ngFor="let item of keys()" [value]="item">
+                    {{item}}
+                </mat-radio-button>
+            </mat-radio-group>
+        </div>
+    </mat-card-content>
+</mat-card>

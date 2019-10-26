@@ -3,12 +3,12 @@ import { mapToMapExpression } from '@angular/compiler/src/render3/util';
 
 
 @Component({
-  selector: 'app-material-zoom',
-  templateUrl: './material-zoom.component.html',
-  styleUrls: ['./material-zoom.component.css'],
+  selector: 'app-layer-control',
+  templateUrl: './layer-control.component.html',
+  styleUrls: ['./layer-control.component.css'],
   
 })
-export class MaterialZoomComponent implements OnInit {
+export class LayerControlComponent implements OnInit {
   @Input() mappa: L.Map;
   @Input() layer: L.Control.LayersObject;
 
@@ -41,5 +41,6 @@ export class MaterialZoomComponent implements OnInit {
   }
   mostraLayer() {
     this.visibile==true;
+    
   }
 }

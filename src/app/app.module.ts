@@ -9,7 +9,7 @@ import {MatToolbarModule, MatButtonModule, MatSidenavModule, MatSlideToggleModul
   MatDividerModule, MatCardModule, MatInputModule, MatFormFieldModule, MatButtonToggleModule, 
   MatRadioModule} from '@angular/material';
 import { CatastoComponent } from './components/catasto/catasto.component';
-import { MaterialZoomComponent } from './components/material-zoom/material-zoom.component';
+import { LayerControlComponent } from './components/layer-control/layer-control.component';
 import { createCustomElement } from '@angular/elements';
 import { FormControl, ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -22,7 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [
     AppComponent,
     CatastoComponent,
-    MaterialZoomComponent
+    LayerControlComponent
   ],
   imports: [
     BrowserModule,
@@ -46,12 +46,12 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [CatastoComponent, MaterialZoomComponent]
+  entryComponents: [CatastoComponent, LayerControlComponent]
 })
 export class AppModule { 
   constructor(private injector: Injector) {
-    const ZoomElement = createCustomElement(MaterialZoomComponent, { injector: this.injector});
-    customElements.define('app-material-zoom', ZoomElement);
+    const LayerElement = createCustomElement(LayerControlComponent, { injector: this.injector});
+    customElements.define('app-layer-control', LayerElement);
 
     library.add(faLayerGroup);
   }

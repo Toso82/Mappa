@@ -1,15 +1,4 @@
 import { Component, OnInit, ComponentFactoryResolver, ViewChild, ViewContainerRef } from '@angular/core';
-
-
-
-
-
-
-
-
-
-
-
 import * as L from 'leaflet';
 import 'proj4leaflet';
 
@@ -18,10 +7,11 @@ import { CatastoComponent } from './components/catasto/catasto.component';
 import '@geoman-io/leaflet-geoman-free';
 import 'leaflet-measure-path';
 import 'leaflet.locatecontrol';
-import { LMaterialZoom } from './LMaterialZoom';
+
 
 import './GoogleMapsTileLayer';
 import { GoogleMapsTileLayer, GoogleMapsType } from './GoogleMapsTileLayer';
+import { LLayerControl } from './LMaterialLayer';
 
 
 @Component({
@@ -115,7 +105,7 @@ export class AppComponent implements OnInit {
       'Catasto': catasto
     };
     */
-    new LMaterialZoom('GoogleStreet', baseMaps, { position: 'topleft' }).addTo(this.map);
+    new LLayerControl('GoogleStreet', baseMaps, { position: 'topleft' }).addTo(this.map);
 
 
 
