@@ -1,0 +1,33 @@
+
+<div fxLayout="column">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>Livelli catastalli</mat-card-title>
+            <mat-card-subtitle>
+                <p>
+                Livelli forniti tramite il servizio di 
+                <a href="http://www.agenziaentrate.gov.it/wps/content/Nsilib/Nsi/Schede/FabbricatiTerreni/Consultazione+cartografia+catastale/Servizio+Consultazione+cartografia/?page=schedefabbricatieterreni" 
+                title="Vai al sito dell'Agenzia delle Entrate" target="_blank">Consultazione cartografia catastale - WMS</a> dell'Agenzia delle Entrate.
+                La licenza di utilizzo dei livelli forniti dall'Agenzia delle Entrate vieta l'uso commerciale e la produzione 
+                di opere derivate. Utilizzando il servizio dichiari di aver compreso tali limitazioni d'uso.
+                </p>
+            </mat-card-subtitle>            
+        </mat-card-header>
+        <mat-card-content>
+            <mat-list>
+                <mat-list-item *ngFor="let item of listLayer"> 
+                    <mat-slide-toggle fxFlex="grow" (change)="AttivaLayer($event,item)">{{item.options.Name}}</mat-slide-toggle>
+                    <mat-slider step="0.1" min="0" max="1" #slider (change)="CambioTrasparenza($event,item)" [value]="item.options.opacity"></mat-slider>  
+                    <span>{{ slider.value *100 }}</span>
+                    <!-- <mat-form-field>
+                        <input matInput value=  slider.value >     
+                    </mat-form-field>              -->
+                </mat-list-item>
+                <mat-divider></mat-divider>
+                
+            </mat-list>
+        </mat-card-content>        
+    </mat-card>   
+    
+</div>
+

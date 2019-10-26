@@ -1,0 +1,392 @@
+{
+    "WMS_Capabilities": {
+        "Service": {
+            "Name": "WMS",
+            "Title": "Cartografia Catastale",
+            "Abstract": "Agenzia delle Entrate - Servizio di consultazione della cartografia catastale WMS. Le informazioni sono allineate con la banca dati cartografica del Catasto, costantemente aggiornata in modalità automatica mediante gli atti tecnici predisposti dai professionisti abilitati. Licenza CC-BY-NC-ND. L&#39;Agenzia è l&#39;amministrazione titolare dei dati. La citazione della titolarità è sempre obbligatoria in caso d&#39;uso.",
+            "KeywordList": {
+                "Keyword": [
+                    "WMS",
+                    "INSPIRE",
+                    "ViewService",
+                    "Cartografia catastale",
+                    "Particelle catastali",
+                    "Pianificazione del territorio e catasto",
+                    "Cadastral parcels",
+                    "infoMapAccessService"
+                ]
+            },
+            "OnlineResource": "",
+            "ContactInformation": {
+                "ContactPersonPrimary": {
+                    "ContactPerson": "Agenzia delle Entrate – Direzione Centrale Servizi Catastali, Cartografici e di Pubblicità Immobiliare",
+                    "ContactOrganization": "Agenzia delle Entrate"
+                },
+                "ContactPosition": "Proprietario",
+                "ContactElectronicMailAddress": "assistenzaweb@agenziaentrate.it"
+            },
+            "Fees": "CC-BY-NC-ND",
+            "AccessConstraints": "Dato pubblico",
+            "MaxWidth": 2048,
+            "MaxHeight": 2048
+        },
+        "Capability": {
+            "Request": {
+                "GetCapabilities": {
+                    "Format": "text/xml",
+                    "DCPType": {
+                        "HTTP": {
+                            "Get": {
+                                "OnlineResource": ""
+                            },
+                            "Post": {
+                                "OnlineResource": ""
+                            }
+                        }
+                    }
+                },
+                "GetMap": {
+                    "Format": [
+                        "image/png",
+                        "image/jpeg"
+                    ],
+                    "DCPType": {
+                        "HTTP": {
+                            "Get": {
+                                "OnlineResource": ""
+                            },
+                            "Post": {
+                                "OnlineResource": ""
+                            }
+                        }
+                    }
+                },
+                "GetFeatureInfo": {
+                    "Format": [
+                        "text/html",
+                        "text/plain",
+                        "application/vnd.ogc.gml"
+                    ],
+                    "DCPType": {
+                        "HTTP": {
+                            "Get": {
+                                "OnlineResource": ""
+                            },
+                            "Post": {
+                                "OnlineResource": ""
+                            }
+                        }
+                    }
+                }
+            },
+            "Exception": {
+                "Format": [
+                    "XML",
+                    "INIMAGE",
+                    "BLANK"
+                ]
+            },
+            "sld:UserDefinedSymbolization": "",
+            "inspire_vs:ExtendedCapabilities": {
+                "inspire_common:MetadataUrl": {
+                    "inspire_common:URL": "https://csw.cartografia.agenziaentrate.gov.it/age-inspire/srv/ita/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;ID=age:consultazione_catasto_wms&amp;ElementSetName=full&amp;outputSchema=csw:IsoRecord",
+                    "inspire_common:MediaType": "application/vnd.ogc.csw.capabilities.response_xml"
+                },
+                "inspire_common:SupportedLanguages": {
+                    "inspire_common:DefaultLanguage": {
+                        "inspire_common:Language": "ita"
+                    }
+                },
+                "inspire_common:ResponseLanguage": {
+                    "inspire_common:Language": "ita"
+                }
+            },
+            "Layer": {
+                "Name": "Cartografia_Catastale",
+                "Title": "Cartografia Catastale",
+                "Abstract": "Agenzia delle Entrate - Servizio di consultazione della cartografia catastale WMS. Le informazioni sono allineate con la banca dati cartografica del Catasto, costantemente aggiornata in modalità automatica mediante gli atti tecnici predisposti dai professionisti abilitati. Licenza CC-BY-NC-ND. L&#39;Agenzia è l&#39;amministrazione titolare dei dati. La citazione della titolarità è sempre obbligatoria in caso d&#39;uso.",
+                "KeywordList": {
+                    "Keyword": [
+                        "WMS",
+                        "INSPIRE",
+                        "ViewService",
+                        "Cartografia catastale",
+                        "Particelle catastali",
+                        "Pianificazione del territorio e catasto",
+                        "Cadastral parcels",
+                        "infoMapAccessService"
+                    ]
+                },
+                "CRS": [
+                    "EPSG:6706",
+                    "EPSG:4258",
+                    "EPSG:3044",
+                    "EPSG:3045",
+                    "EPSG:3046",
+                    "EPSG:25832",
+                    "EPSG:25833",
+                    "EPSG:25834"
+                ],
+                "EX_GeographicBoundingBox": {
+                    "westBoundLongitude": 6,
+                    "eastBoundLongitude": 19,
+                    "southBoundLatitude": 35,
+                    "northBoundLatitude": 48
+                },
+                "BoundingBox": "",
+                "Style": {
+                    "Name": "default",
+                    "Title": "default",
+                    "LegendURL": {
+                        "Format": "image/png",
+                        "OnlineResource": ""
+                    }
+                },
+                "Layer": [
+                    {
+                        "Name": "province",
+                        "Title": "Province - Uffici",
+                        "Abstract": "Il layer contiene la rappresentazione, a seguito di un processo di semplificazione, dei confini delle province per come di competenza degli Uffici del catasto.",
+                        "EX_GeographicBoundingBox": {
+                            "westBoundLongitude": 6,
+                            "eastBoundLongitude": 19,
+                            "southBoundLatitude": 35,
+                            "northBoundLatitude": 48
+                        },
+                        "BoundingBox": "",
+                        "MetadataURL": {
+                            "Format": "application/vnd.ogc.csw.capabilities.response_xml",
+                            "OnlineResource": ""
+                        },
+                        "Style": {
+                            "Name": "default",
+                            "Title": "default",
+                            "LegendURL": {
+                                "Format": "image/png",
+                                "OnlineResource": ""
+                            }
+                        },
+                        "MinScaleDenominator": 50000
+                    },
+                    {
+                        "Name": "CP.CadastralZoning",
+                        "Title": "Mappe",
+                        "Abstract": "Il layer contiene la rappresentazione dei bordi delle mappe catastali. Ciascuna mappa e&#39; etichettata con un codice formato da:\n- numero del foglio \n- eventuale lettera identificativa dell&#39;allegato \n- eventuale lettera identificativa dello sviluppo, preceduta dal carattere &#39;_&#39; o dalla lettera identificativa dell&#39;allegato.",
+                        "EX_GeographicBoundingBox": {
+                            "westBoundLongitude": 6,
+                            "eastBoundLongitude": 19,
+                            "southBoundLatitude": 35,
+                            "northBoundLatitude": 48
+                        },
+                        "BoundingBox": "",
+                        "MetadataURL": {
+                            "Format": "application/vnd.ogc.csw.capabilities.response_xml",
+                            "OnlineResource": ""
+                        },
+                        "Style": {
+                            "Name": "default",
+                            "Title": "default",
+                            "LegendURL": {
+                                "Format": "image/png",
+                                "OnlineResource": ""
+                            }
+                        },
+                        "MinScaleDenominator": 20,
+                        "MaxScaleDenominator": 200000
+                    },
+                    {
+                        "Name": "acque",
+                        "Title": "Acque",
+                        "Abstract": "Il layer contiene la rappresentazione di specchi e corsi d&#39;acqua.\nSi assumono come rappresentazione dell&#39;alveo dei corsi d&#39;acqua pubblica le linee corrispondenti ai limiti raggiunti dal livello medio delle piene ordinarie.\nSi assume come rappresentazione degli specchi d&#39;acqua naturali, laghi e stagni, la linea corrispondente alla curva di livello a quota uguale a quella di sbocco; ovvero - in mancanza di sbocco - quella corrispondente al livello ordinario delle acque.\nI laghi artificiali si rappresentano con le linee corrispondenti al livello di massimo invaso.\nI canali artificiali per la condotta delle acque si rappresentano con le linee corrispondenti alle sommità delle loro sponde.",
+                        "EX_GeographicBoundingBox": {
+                            "westBoundLongitude": 6,
+                            "eastBoundLongitude": 19,
+                            "southBoundLatitude": 35,
+                            "northBoundLatitude": 48
+                        },
+                        "BoundingBox": "",
+                        "MetadataURL": {
+                            "Format": "application/vnd.ogc.csw.capabilities.response_xml",
+                            "OnlineResource": ""
+                        },
+                        "Style": {
+                            "Name": "default",
+                            "Title": "default",
+                            "LegendURL": {
+                                "Format": "image/png",
+                                "OnlineResource": ""
+                            }
+                        },
+                        "MinScaleDenominator": 20,
+                        "MaxScaleDenominator": 40000
+                    },
+                    {
+                        "Name": "strade",
+                        "Title": "Strade",
+                        "Abstract": "Il layer contiene la rappresentazione delle strade pubbliche (statali, provinciali e comunali) o soggette a servitù pubblica (vicinali), che si rappresentano in mappa con linea continua corrispondente ai limiti della loro sede.\nSono comprese nella sede stradale il piano viabile, le cunette, nonché le scarpate e le zone di rispetto e protezione laterali quando hanno larghezza grafica inferiore a mm.3 (alla scala originaria della mappa) o di larghezza superiore quando non forniscono reddito apprezzabile.",
+                        "EX_GeographicBoundingBox": {
+                            "westBoundLongitude": 6,
+                            "eastBoundLongitude": 19,
+                            "southBoundLatitude": 35,
+                            "northBoundLatitude": 48
+                        },
+                        "BoundingBox": "",
+                        "Style": {
+                            "Name": "default",
+                            "Title": "default",
+                            "LegendURL": {
+                                "Format": "image/png",
+                                "OnlineResource": ""
+                            }
+                        },
+                        "MinScaleDenominator": 20,
+                        "MaxScaleDenominator": 40000
+                    },
+                    {
+                        "Name": "CP.CadastralParcel",
+                        "Title": "Particelle",
+                        "Abstract": "Il layer contiene le particelle catastali.\nCostituisce distinta particella catastale ogni porzione continua di terreno che sia della medesima qualità e classe o abbia la stessa destinazione d’uso, che sia situata in un medesimo comune ed appartenga allo stesso possessore.\nLe particelle, i fabbricati, le strade e le acque, in questo servizio presentati su layer separati, coprono l’intero territorio nazionale, ad eccezione dei territori nei quali il catasto è gestito, per delega dello Stato, dalle Province Autonome di Trento e di Bolzano. \nNel layer Particelle sono rappresentati anche i bordi dei fabbricati eventualmente presenti all’interno delle particelle.",
+                        "EX_GeographicBoundingBox": {
+                            "westBoundLongitude": 6,
+                            "eastBoundLongitude": 19,
+                            "southBoundLatitude": 35,
+                            "northBoundLatitude": 48
+                        },
+                        "BoundingBox": "",
+                        "MetadataURL": {
+                            "Format": "application/vnd.ogc.csw.capabilities.response_xml",
+                            "OnlineResource": ""
+                        },
+                        "Style": {
+                            "Name": "default",
+                            "Title": "default",
+                            "LegendURL": {
+                                "Format": "image/png",
+                                "OnlineResource": ""
+                            }
+                        },
+                        "MinScaleDenominator": 20,
+                        "MaxScaleDenominator": 5000
+                    },
+                    {
+                        "Name": "fabbricati",
+                        "Title": "Fabbricati",
+                        "Abstract": "I fabbricati - e ciascuna porzione di essi che avendo caratteristiche architettoniche e \ncostruttive proprie, costituisce distinta particella edilizia - \nsi rappresentano con le linee corrispondenti alla loro proiezione sul piano orizzontale. \nTale linea è continua e chiusa per le parti di fabbricato nelle quali la proiezione coincide con il loro \nperimetro esterno sul terreno.",
+                        "EX_GeographicBoundingBox": {
+                            "westBoundLongitude": 6,
+                            "eastBoundLongitude": 19,
+                            "southBoundLatitude": 35,
+                            "northBoundLatitude": 48
+                        },
+                        "BoundingBox": "",
+                        "MetadataURL": {
+                            "Format": "application/vnd.ogc.csw.capabilities.response_xml",
+                            "OnlineResource": ""
+                        },
+                        "Style": {
+                            "Name": "default",
+                            "Title": "default",
+                            "LegendURL": {
+                                "Format": "image/png",
+                                "OnlineResource": ""
+                            }
+                        },
+                        "MinScaleDenominator": 20,
+                        "MaxScaleDenominator": 5000
+                    },
+                    {
+                        "Name": "vestizioni",
+                        "Title": "Vestizioni",
+                        "Abstract": "vestizioni",
+                        "Style": {
+                            "Name": "default",
+                            "Title": "default",
+                            "LegendURL": {
+                                "Format": "image/png",
+                                "OnlineResource": ""
+                            }
+                        },
+                        "Layer": [
+                            {
+                                "Name": "codice_plla",
+                                "Title": "Codice particella",
+                                "Abstract": "Il layer contiene la rappresentazione dell’etichetta con il numero o l’identificativo letterale della particella.",
+                                "EX_GeographicBoundingBox": {
+                                    "westBoundLongitude": 6,
+                                    "eastBoundLongitude": 19,
+                                    "southBoundLatitude": 35,
+                                    "northBoundLatitude": 48
+                                },
+                                "BoundingBox": "",
+                                "MetadataURL": {
+                                    "Format": "application/vnd.ogc.csw.capabilities.response_xml",
+                                    "OnlineResource": ""
+                                },
+                                "Style": {
+                                    "Name": "default",
+                                    "Title": "default",
+                                    "LegendURL": {
+                                        "Format": "image/png",
+                                        "OnlineResource": ""
+                                    }
+                                },
+                                "MinScaleDenominator": 20,
+                                "MaxScaleDenominator": 2000
+                            },
+                            {
+                                "Name": "simbolo_graffa",
+                                "Title": "Simbolo Graffa",
+                                "Abstract": "Il layer contiene la rappresentazione dei segni convenzionali di graffa, usati per collegare aree adiacenti che costituiscono unica particella.",
+                                "EX_GeographicBoundingBox": {
+                                    "westBoundLongitude": 6,
+                                    "eastBoundLongitude": 19,
+                                    "southBoundLatitude": 35,
+                                    "northBoundLatitude": 48
+                                },
+                                "BoundingBox": "",
+                                "MetadataURL": {
+                                    "Format": "application/vnd.ogc.csw.capabilities.response_xml",
+                                    "OnlineResource": ""
+                                },
+                                "Style": {
+                                    "Name": "default",
+                                    "Title": "default",
+                                    "LegendURL": {
+                                        "Format": "image/png",
+                                        "OnlineResource": ""
+                                    }
+                                },
+                                "MinScaleDenominator": 20,
+                                "MaxScaleDenominator": 2000
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "copyright",
+                        "Title": "Copyright(c)",
+                        "Abstract": "Agenzia delle Entrate - Servizio di consultazione della cartografia catastale WMS. Le informazioni sono allineate con la banca dati cartografica del Catasto, costantemente aggiornata in modalità automatica mediante gli atti tecnici predisposti dai professionisti abilitati. Licenza CC-BY-NC-ND. L&#39;Agenzia è l&#39;amministrazione titolare dei dati. La citazione della titolarità è sempre obbligatoria in caso d&#39;uso.",
+                        "EX_GeographicBoundingBox": {
+                            "westBoundLongitude": 6,
+                            "eastBoundLongitude": 19,
+                            "southBoundLatitude": 35,
+                            "northBoundLatitude": 48
+                        },
+                        "BoundingBox": "",
+                        "MetadataURL": {
+                            "Format": "application/vnd.ogc.csw.capabilities.response_xml",
+                            "OnlineResource": ""
+                        },
+                        "Style": {
+                            "Name": "default",
+                            "Title": "default",
+                            "LegendURL": {
+                                "Format": "image/png",
+                                "OnlineResource": ""
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
