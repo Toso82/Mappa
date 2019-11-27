@@ -1,4 +1,4 @@
-name: Node Test
+name: Mia prova
 
 on: [push]
 
@@ -13,5 +13,6 @@ jobs:
     - name: npm install, build, and test
       run: |
         npm --version
-        eslint
+        npm install
+        tslint
       
