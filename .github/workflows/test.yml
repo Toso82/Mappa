@@ -13,4 +13,5 @@ jobs:
       run: |
         npm --version
         npm install
+        ng build --prod
       
