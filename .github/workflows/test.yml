@@ -5,15 +5,13 @@ on: [push]
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: [windows-latest]
     
     
     steps:
     - name: Installa angular cli
-      run: npm install @angular/cli      
-    - name: npm install, build, and test
+      run: npm install      
+    - name: Compila
       run: |
-        npm --version
-        npm install
         ng build
       
