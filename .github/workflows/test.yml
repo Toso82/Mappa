@@ -1,0 +1,14 @@
+name: Node Test
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: npm install, build, and test
+      run: |
+        npm ci
+      
