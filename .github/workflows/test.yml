@@ -9,6 +9,8 @@ jobs:
     
     
     steps:
+    - name: Installa angular cli
+      run: npm install -g @angular/cli      
     - name: npm install, build, and test
       run: |
         npm --version
