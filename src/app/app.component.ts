@@ -4,14 +4,31 @@ import 'proj4leaflet';
 
 import { CatastoComponent } from './components/catasto/catasto.component';
 
-import '@geoman-io/leaflet-geoman-free';
+// import '@geoman-io/leaflet-geoman-free';
 import 'leaflet-measure-path';
 import 'leaflet.locatecontrol';
-
+import 'leaflet.markercluster';
 
 import './GoogleMapsTileLayer';
 import { GoogleMapsTileLayer, GoogleMapsType } from './GoogleMapsTileLayer';
 import { LLayerControl } from './LMaterialLayer';
+import { AskingPriceComponent } from './components/asking-price/asking-price.component';
+import { TestServiceService } from './services/test-service.service';
+
+const iconRetinaUrl = 'assets/marker-icon-2x.png';
+const iconUrl = 'assets/marker-icon.png';
+const shadowUrl = 'assets/marker-shadow.png';
+const iconDefault = L.icon({
+  iconRetinaUrl,
+  iconUrl,
+  shadowUrl,
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  tooltipAnchor: [16, -28],
+  shadowSize: [41, 41]
+});
+L.Marker.prototype.options.icon = iconDefault;
 
 
 @Component({
@@ -31,7 +48,7 @@ export class AppComponent implements OnInit {
 
 
 
-  constructor(private resolver: ComponentFactoryResolver) { }
+  constructor(private resolver: ComponentFactoryResolver, private testService: TestServiceService) { }
 
 
   ngOnInit(): void {
@@ -47,7 +64,7 @@ export class AppComponent implements OnInit {
   }
 
   leafleft() {
-
+    
    
     const CRS_54032 = new L.Proj.CRS('ESRI:54032', '+proj=aeqd +lat_0=0 +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs', );
 
@@ -88,8 +105,7 @@ export class AppComponent implements OnInit {
 
     });
 
-
-
+   // (<any>L).PM.initialize({ optIn: true });
 
     const baseMaps = {
       'GoogleStreet': googlestreets,
@@ -123,10 +139,24 @@ export class AppComponent implements OnInit {
     //   (<any>e).layer.showMeasurements();
     //   console.log(e);
     // });
+    this.map.setView(new L.LatLng(42.853316248207115, 13.591718673706056), 14);
+    
+    
+    /*
+    const markers = L.markerClusterGroup();
+    this.map.addLayer(markers);
 
-
-
-
+    this.testService.getValori().subscribe(
+      (x) => {
+        // this.map.setView(new L.LatLng(x.Center.lat, x.Center.lng),x.Zoom);
+            
+        x.Markers.forEach(element => {
+          markers.addLayer(L.marker(new L.LatLng(element.Coordinate.lat, element.Coordinate.lng)));
+        });
+        
+      }
+    );
+    */
     
 
 
@@ -149,5 +179,18 @@ export class AppComponent implements OnInit {
 
     drawbar.toggle();
   }
+  openAskingPrice(drawbar: any) {
+    this.entry.clear();
+    const factory = this.resolver.resolveComponentFactory(AskingPriceComponent);
+
+
+    const component = <AskingPriceComponent>this.entry.createComponent(factory).instance;
+
+    
+
+
+    drawbar.toggle();
+  }
+
 
 }

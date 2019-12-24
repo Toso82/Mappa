@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
-import { mapToMapExpression } from '@angular/compiler/src/render3/util';
+import { faLayerGroup } from '@fortawesome/free-solid-svg-icons';
+
 
 
 @Component({
@@ -9,6 +10,10 @@ import { mapToMapExpression } from '@angular/compiler/src/render3/util';
   
 })
 export class LayerControlComponent implements OnInit {
+
+  faLayerGroup = faLayerGroup;
+
+
   @Input() mappa: L.Map;
   @Input() layer: L.Control.LayersObject;
 

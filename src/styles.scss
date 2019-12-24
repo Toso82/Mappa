@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+/* @import '../node_modules/leaflet/dist/leaflet.css';  */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.shrinking-mat-form-field {
+    .mat-form-field-infix {
+      width: auto !important;
+    }
+}
+.mat-form-field:not(.mat-form-field-has-label) .mat-form-field-infix {
+  border-top-width: 0;
+}
