@@ -5,12 +5,23 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
-import {MatToolbarModule, MatButtonModule, MatSidenavModule, MatSlideToggleModule, MatSliderModule, MatListModule, 
-  MatDividerModule, MatCardModule, MatInputModule, MatFormFieldModule, MatButtonToggleModule, 
-  MatRadioModule,
-  MatSelectModule,
-  MatFormFieldDefaultOptions,
-  MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/material';
+
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatListModule } from '@angular/material/list';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatCardModule } from '@angular/material/card';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+
+
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatSelectModule } from '@angular/material/select';
+import { MatFormFieldDefaultOptions , MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
+
+
 import { CatastoComponent } from './components/catasto/catasto.component';
 import { LayerControlComponent } from './components/layer-control/layer-control.component';
 import { createCustomElement } from '@angular/elements';
@@ -22,6 +33,7 @@ import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { AskingPriceComponent } from './components/asking-price/asking-price.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { MatSliderModule } from '@angular/material/slider';
 
 
 const appearance: MatFormFieldDefaultOptions = {
@@ -45,7 +57,6 @@ const appearance: MatFormFieldDefaultOptions = {
     FontAwesomeModule,
     HttpClientModule,
     MatToolbarModule,
-    MatButtonModule,
     MatSidenavModule,
     MatSlideToggleModule,
     MatSliderModule,

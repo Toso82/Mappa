@@ -1,10 +1,12 @@
 import { Component, OnInit, Input } from '@angular/core';
 import 'proj4leaflet';
 import * as L from 'leaflet';
-import { MatSlideToggleChange, MatSliderChange } from '@angular/material';
 import { WMCapabilitiesService } from 'src/app/services/wmcapabilities.service';
 import { LayerElement } from 'src/app/services/WMSCapabilitiesType';
 import { Observable } from 'rxjs';
+import { MatSlideToggleChange } from '@angular/material/slide-toggle';
+import { MatSliderChange } from '@angular/material/slider';
+
 @Component({
   selector: 'app-catasto',
   templateUrl: './catasto.component.html',

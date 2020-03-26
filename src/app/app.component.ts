@@ -1,6 +1,8 @@
 import { Component, OnInit, ComponentFactoryResolver, ViewChild, ViewContainerRef } from '@angular/core';
 import * as L from 'leaflet';
 import 'proj4leaflet';
+import '@geoman-io/leaflet-geoman-free';
+
 
 import { CatastoComponent } from './components/catasto/catasto.component';
 
@@ -64,13 +66,13 @@ export class AppComponent implements OnInit {
   }
 
   leafleft() {
-    
-   
+
+
     const CRS_54032 = new L.Proj.CRS('ESRI:54032', '+proj=aeqd +lat_0=0 +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs', );
 
 
 
-   
+
 
     const googlestreets = new GoogleMapsTileLayer(GoogleMapsType.standardRoadMap);
     const googlesatellite = new GoogleMapsTileLayer(GoogleMapsType.hybrid);
@@ -131,33 +133,33 @@ export class AppComponent implements OnInit {
 
     // L.control.zoom({ position:'bottomleft'}).addTo(map);
 
-
-    // (<any>(this.map.pm)).setLang('it');
-    // this.map.pm.addControls({ position: 'topright', drawMarker: false });
-
+    
+    (<any>this.map).pm.setLang('it');
+    (<any>this.map).pm.addControls({ position: 'topright', drawMarker: false });
+    (<any>this.map).pm.initialize({ optIn: true });
     // this.map.on('pm:create', e => {
     //   (<any>e).layer.showMeasurements();
     //   console.log(e);
     // });
     this.map.setView(new L.LatLng(42.853316248207115, 13.591718673706056), 14);
-    
-    
-    /*
+
+
+
     const markers = L.markerClusterGroup();
     this.map.addLayer(markers);
 
     this.testService.getValori().subscribe(
       (x) => {
         // this.map.setView(new L.LatLng(x.Center.lat, x.Center.lng),x.Zoom);
-            
+
         x.Markers.forEach(element => {
           markers.addLayer(L.marker(new L.LatLng(element.Coordinate.lat, element.Coordinate.lng)));
         });
-        
+
       }
     );
-    */
-    
+
+
 
 
 
@@ -186,7 +188,7 @@ export class AppComponent implements OnInit {
 
     const component = <AskingPriceComponent>this.entry.createComponent(factory).instance;
 
-    
+
 
 
     drawbar.toggle();
