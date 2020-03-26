@@ -39,7 +39,6 @@
     "leaflet-measure-path": "^1.4.2",
     "leaflet.locatecontrol": "^0.71.0",
     "leaflet.markercluster": "^1.4.1",
-    "npm-check-updates": "^4.0.5",
     "ol": "^6.2.1",
     "ol-layerswitcher": "^3.5.0",
     "proj4": "^2.6.0",
