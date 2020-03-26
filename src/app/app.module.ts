@@ -14,7 +14,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
-
+import { MatButtonModule } from '@angular/material/button';
 
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatRadioModule } from '@angular/material/radio';
@@ -68,6 +68,7 @@ const appearance: MatFormFieldDefaultOptions = {
     MatButtonToggleModule,
     MatRadioModule,
     MatSelectModule,
+    MatButtonModule,
     ServiceWorkerModule.register('.ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [
