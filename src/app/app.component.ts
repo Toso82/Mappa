@@ -145,7 +145,7 @@ export class AppComponent implements OnInit {
 
 
 
-    const markers = L.markerClusterGroup();
+    /*const markers = L.markerClusterGroup();
     this.map.addLayer(markers);
 
     this.testService.getValori().subscribe(
@@ -158,7 +158,7 @@ export class AppComponent implements OnInit {
 
       }
     );
-
+  */
 
 
 
