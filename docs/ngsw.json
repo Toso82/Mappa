@@ -1,0 +1,100 @@
+{
+  "configVersion": 1,
+  "timestamp": 1585303152404,
+  "index": "/Mappa/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/Mappa/favicon.ico",
+        "/Mappa/index.html",
+        "/Mappa/main-es2015.29aa5d68ab46ba809a38.js",
+        "/Mappa/main-es5.29aa5d68ab46ba809a38.js",
+        "/Mappa/manifest.webmanifest",
+        "/Mappa/polyfills-es2015.cbe0329d2e62819f40a6.js",
+        "/Mappa/polyfills-es5.55fd38e5144665c2e53d.js",
+        "/Mappa/runtime-es2015.c9afb3256f2870e161de.js",
+        "/Mappa/runtime-es5.c9afb3256f2870e161de.js",
+        "/Mappa/scripts.dc357b0f6dff293d5fa6.js",
+        "/Mappa/styles.fc73d5f29bf4b46f8237.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/Mappa/assets/Ascoli.json",
+        "/Mappa/assets/icons/icon-128x128.png",
+        "/Mappa/assets/icons/icon-144x144.png",
+        "/Mappa/assets/icons/icon-152x152.png",
+        "/Mappa/assets/icons/icon-192x192.png",
+        "/Mappa/assets/icons/icon-384x384.png",
+        "/Mappa/assets/icons/icon-512x512.png",
+        "/Mappa/assets/icons/icon-72x72.png",
+        "/Mappa/assets/icons/icon-96x96.png",
+        "/Mappa/assets/layers-2x.png",
+        "/Mappa/assets/layers.png",
+        "/Mappa/assets/marker-icon-2x.png",
+        "/Mappa/assets/marker-icon.png",
+        "/Mappa/assets/marker-shadow.png",
+        "/Mappa/layers-2x.8f2c4d11474275fbc161.png",
+        "/Mappa/layers.416d91365b44e4b4f477.png",
+        "/Mappa/marker-icon.2b3e1faf89f94a483539.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/Mappa/assets/Ascoli.json": "306c6142b02f073e06b83644e48ea9f33aa94283",
+    "/Mappa/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/Mappa/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/Mappa/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/Mappa/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/Mappa/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/Mappa/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/Mappa/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/Mappa/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/Mappa/assets/layers-2x.png": "152a162333e46d24f9d89f566312fc0c64011dee",
+    "/Mappa/assets/layers.png": "c9e7528e491a39232ba24a2706c6c739d6fb0f06",
+    "/Mappa/assets/marker-icon-2x.png": "cf3a536596b1f58e0ac805404183c8e6d6bdacb5",
+    "/Mappa/assets/marker-icon.png": "60a90bcbb2b42b7ddb4556db94eb7c1084b0e5da",
+    "/Mappa/assets/marker-shadow.png": "7b6a8df63930381e96604e705168d0527d6b82bc",
+    "/Mappa/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+    "/Mappa/index.html": "7410a8a508bc1cd6ee87a1c88a80f18f89747240",
+    "/Mappa/layers-2x.8f2c4d11474275fbc161.png": "152a162333e46d24f9d89f566312fc0c64011dee",
+    "/Mappa/layers.416d91365b44e4b4f477.png": "c9e7528e491a39232ba24a2706c6c739d6fb0f06",
+    "/Mappa/main-es2015.29aa5d68ab46ba809a38.js": "b4d42b3d7fcb4455ae0b33af388fd7f1aa6ae50e",
+    "/Mappa/main-es5.29aa5d68ab46ba809a38.js": "1b82c060b7b20906c45ced8c68df734cd02ac7b2",
+    "/Mappa/manifest.webmanifest": "880c0f77b9ba43576ae6cd1c34591da633dcd193",
+    "/Mappa/marker-icon.2b3e1faf89f94a483539.png": "60a90bcbb2b42b7ddb4556db94eb7c1084b0e5da",
+    "/Mappa/polyfills-es2015.cbe0329d2e62819f40a6.js": "72ad4ccc0a3916ae4598199447cdeadd6d380570",
+    "/Mappa/polyfills-es5.55fd38e5144665c2e53d.js": "e51a1de4f016cd689dbdbef51043dec9518c4111",
+    "/Mappa/runtime-es2015.c9afb3256f2870e161de.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/Mappa/runtime-es5.c9afb3256f2870e161de.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/Mappa/scripts.dc357b0f6dff293d5fa6.js": "18ea40a62a5efefe9133869c5beca18650693afd",
+    "/Mappa/styles.fc73d5f29bf4b46f8237.css": "ad4201e5dcbcaede28b0761ff8c2fa0865870d28"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
