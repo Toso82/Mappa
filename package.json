@@ -43,7 +43,7 @@
     "ol-layerswitcher": "^3.5.0",
     "proj4": "^2.6.0",
     "proj4leaflet": "^1.0.2",
-    "rxjs": "^6.5.4",
+    "rxjs": "^6.6.3",
     "tslib": "^2.0.0",
     "xml-js": "^1.6.11",
     "zone.js": "~0.10.3"
