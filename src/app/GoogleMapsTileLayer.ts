@@ -14,7 +14,8 @@ export enum GoogleMapsType {
 
 export class GoogleMapsTileLayer extends L.TileLayer {
     private _url =  'https://{s}.google.com/vt/lyrs={type}&x={x}&y={y}&z={z}';
-
+    //private _url =  'https://mobilemaps-pa.googleapis.com/vt/lyrs={type}&x={x}&y={y}&z={z}';
+    
     constructor(idMappa: GoogleMapsType) {
         super('', {
             maxZoom: 19,

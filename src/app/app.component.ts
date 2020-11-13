@@ -16,6 +16,7 @@ import { GoogleMapsTileLayer, GoogleMapsType } from './GoogleMapsTileLayer';
 import { LLayerControl } from './LMaterialLayer';
 import { AskingPriceComponent } from './components/asking-price/asking-price.component';
 import { TestServiceService } from './services/test-service.service';
+import { text } from '@fortawesome/fontawesome-svg-core';
 
 const iconRetinaUrl = 'assets/marker-icon-2x.png';
 const iconUrl = 'assets/marker-icon.png';
@@ -89,6 +90,12 @@ export class AppComponent implements OnInit {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     });
 
+    const test: L.TileLayer = L.tileLayer('https://www.google.it/maps/vt/stream/pb=!1m7!8m6!1m3!' +
+    '1i{z}!2i{x}!3i{y}!' +
+    '2i1!3x7!2m9!1e0!2sm!3i528248780!4m2!1sgm!2s2!4m2!1sgs!2s1.1!3m8!2sit!3sit!5e1105!12m4!1e68!2m2!1sset' +
+    '!2sRoadmapSatellite!4e1!5m4!1e4!8m2!1e0!1e1!6m5!1e12!2i2!39b1!44e1!50e0!23i1376099!23i1375246');
+
+
 
     /*
     const catasto = L.tileLayer.wms('https://wms.cartografia.agenziaentrate.gov.it/inspire/wms/ows01.php', {
@@ -115,6 +122,7 @@ export class AppComponent implements OnInit {
       'Google Terreno': googleterrein,
       'OpenStreet': openstreet,
       'Mapbox': mapbox,
+      'test': test
 
     };
     /*

@@ -34,7 +34,7 @@
     "core-js": "^3.6.4",
     "document-register-element": "^1.14.3",
     "fast-xml-parser": "^3.16.0",
-    "leaflet": "^1.6.0",
+    "leaflet": "^1.7.1",
     "leaflet-measure-path": "^1.4.2",
     "leaflet.locatecontrol": "^0.71.0",
     "leaflet.markercluster": "^1.4.1",
