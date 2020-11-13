@@ -1,24 +1,27 @@
 {
   "configVersion": 1,
-  "timestamp": 1585303996103,
+  "timestamp": 1605260671544,
   "index": "/Mappa/index.html",
   "assetGroups": [
     {
       "name": "app",
       "installMode": "prefetch",
       "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
       "urls": [
         "/Mappa/favicon.ico",
         "/Mappa/index.html",
-        "/Mappa/main-es2015.29aa5d68ab46ba809a38.js",
-        "/Mappa/main-es5.29aa5d68ab46ba809a38.js",
+        "/Mappa/main-es2015.3a3a9ab633690605d666.js",
+        "/Mappa/main-es5.3a3a9ab633690605d666.js",
         "/Mappa/manifest.webmanifest",
-        "/Mappa/polyfills-es2015.cbe0329d2e62819f40a6.js",
-        "/Mappa/polyfills-es5.55fd38e5144665c2e53d.js",
-        "/Mappa/runtime-es2015.c9afb3256f2870e161de.js",
-        "/Mappa/runtime-es5.c9afb3256f2870e161de.js",
+        "/Mappa/polyfills-es2015.14a35c9427c36f9ea486.js",
+        "/Mappa/polyfills-es5.fe7c980f839004f44704.js",
+        "/Mappa/runtime-es2015.681bd8a4edb177c86959.js",
+        "/Mappa/runtime-es5.681bd8a4edb177c86959.js",
         "/Mappa/scripts.dc357b0f6dff293d5fa6.js",
-        "/Mappa/styles.fc73d5f29bf4b46f8237.css"
+        "/Mappa/styles.f3c814298992ef0f4de2.css"
       ],
       "patterns": []
     },
@@ -26,6 +29,9 @@
       "name": "assets",
       "installMode": "lazy",
       "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
       "urls": [
         "/Mappa/assets/Ascoli.json",
         "/Mappa/assets/icons/icon-128x128.png",
@@ -65,19 +71,19 @@
     "/Mappa/assets/marker-icon.png": "60a90bcbb2b42b7ddb4556db94eb7c1084b0e5da",
     "/Mappa/assets/marker-shadow.png": "7b6a8df63930381e96604e705168d0527d6b82bc",
     "/Mappa/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/Mappa/index.html": "7410a8a508bc1cd6ee87a1c88a80f18f89747240",
+    "/Mappa/index.html": "dbae3786c2181bc0db3becd882c6a6fac4b3ea82",
     "/Mappa/layers-2x.8f2c4d11474275fbc161.png": "152a162333e46d24f9d89f566312fc0c64011dee",
     "/Mappa/layers.416d91365b44e4b4f477.png": "c9e7528e491a39232ba24a2706c6c739d6fb0f06",
-    "/Mappa/main-es2015.29aa5d68ab46ba809a38.js": "b4d42b3d7fcb4455ae0b33af388fd7f1aa6ae50e",
-    "/Mappa/main-es5.29aa5d68ab46ba809a38.js": "1b82c060b7b20906c45ced8c68df734cd02ac7b2",
-    "/Mappa/manifest.webmanifest": "880c0f77b9ba43576ae6cd1c34591da633dcd193",
+    "/Mappa/main-es2015.3a3a9ab633690605d666.js": "9421e8adee0cf8a7ce55bcbdf125b5a131c30271",
+    "/Mappa/main-es5.3a3a9ab633690605d666.js": "2c8813f8cd0fee3e379838e6a56d5efae4e06eb2",
+    "/Mappa/manifest.webmanifest": "8063a64f3677d7eb44676dfa50348f47d83c78fd",
     "/Mappa/marker-icon.2b3e1faf89f94a483539.png": "60a90bcbb2b42b7ddb4556db94eb7c1084b0e5da",
-    "/Mappa/polyfills-es2015.cbe0329d2e62819f40a6.js": "72ad4ccc0a3916ae4598199447cdeadd6d380570",
-    "/Mappa/polyfills-es5.55fd38e5144665c2e53d.js": "e51a1de4f016cd689dbdbef51043dec9518c4111",
-    "/Mappa/runtime-es2015.c9afb3256f2870e161de.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "/Mappa/runtime-es5.c9afb3256f2870e161de.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "/Mappa/scripts.dc357b0f6dff293d5fa6.js": "18ea40a62a5efefe9133869c5beca18650693afd",
-    "/Mappa/styles.fc73d5f29bf4b46f8237.css": "ad4201e5dcbcaede28b0761ff8c2fa0865870d28"
+    "/Mappa/polyfills-es2015.14a35c9427c36f9ea486.js": "65c537467564ee0ba776b629f71ed3413413a7cb",
+    "/Mappa/polyfills-es5.fe7c980f839004f44704.js": "d102d92a05af3c4695590ad7c71844158ed0c998",
+    "/Mappa/runtime-es2015.681bd8a4edb177c86959.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/Mappa/runtime-es5.681bd8a4edb177c86959.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/Mappa/scripts.dc357b0f6dff293d5fa6.js": "4da21e7e50d96fd103f01575d417c6350ecff313",
+    "/Mappa/styles.f3c814298992ef0f4de2.css": "c1783fd8824fb6508bdb05bbf7f52014ce7d727f"
   },
   "navigationUrls": [
     {
@@ -96,5 +102,6 @@
       "positive": false,
       "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
     }
-  ]
+  ],
+  "navigationRequestStrategy": "performance"
 }
